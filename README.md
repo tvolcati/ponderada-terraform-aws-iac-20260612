@@ -171,12 +171,14 @@ aws ec2 describe-instances \
 
 ![Describe instances](artifacts/images/08_aws_describe_instances.svg)
 
-Evidência complementar obtida diretamente no console AWS:
+Evidência complementar obtida diretamente no console AWS.
+
+Observação: esta captura foi feita em uma segunda provisão temporária aberta apenas para registrar o console, por isso o `Instance ID` da imagem é `i-0ec5d5b8d8ed91456`, diferente da primeira execução documentada no fluxo principal (`i-00036219dc46c0669`).
 
 ![Captura do console AWS](Captura%20de%20tela%20de%202025-08-19%2015-42-40.png)
 
 ## Recursos Provisionados
-Durante a execução bem-sucedida, o Terraform acompanhou o `data.aws_ami.ubuntu` e provisionou o recurso `aws_instance.app_server`.
+Durante a primeira execução bem-sucedida do fluxo principal, o Terraform acompanhou o `data.aws_ami.ubuntu` e provisionou o recurso `aws_instance.app_server`.
 
 | Item | Valor obtido |
 | --- | --- |
@@ -222,12 +224,13 @@ Exemplo de geração:
 Em outras palavras: as imagens SVG do relatório são renderizações visuais de saídas reais do terminal, enquanto o arquivo PNG adicionado ao repositório é uma captura manual do console AWS para comprovação visual complementar.
 
 ## Acesso Público Observado
-Durante a execução bem-sucedida, a instância recebeu conectividade pública da AWS com os seguintes identificadores:
+Durante a provisão temporária feita apenas para captura do console AWS, a instância recebeu conectividade pública com os seguintes identificadores:
 
-- IP público observado: `16.148.67.158`
-- DNS público observado: `ec2-16-148-67-158.us-west-2.compute.amazonaws.com`
+- `Instance ID` da captura de console: `i-0ec5d5b8d8ed91456`
+- IP público observado nessa segunda provisão: `44.248.12.20`
+- DNS público observado nessa segunda provisão: `ec2-44-248-12-20.us-west-2.compute.amazonaws.com`
 
-Esses dados foram coletados imediatamente após o `terraform apply`, conforme a evidência em `describe-instances` e `terraform state show`.
+Esses dados foram coletados imediatamente após a segunda execução de `terraform apply`, feita somente para viabilizar a captura manual do console.
 
 Observação importante: a infraestrutura foi destruída ao final da atividade com `terraform destroy -auto-approve`. Portanto, esse IP/DNS servem como evidência histórica da execução, mas não respondem mais a ping ou acesso de rede.
 
