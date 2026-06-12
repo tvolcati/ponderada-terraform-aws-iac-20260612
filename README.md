@@ -8,7 +8,7 @@
 - [Passo a Passo Executado](#passo-a-passo-executado)
 - [Recursos Provisionados](#recursos-provisionados)
 - [Evidências e Prints](#evidências-e-prints)
-- [Link de Auditoria da EC2](#link-de-auditoria-da-ec2)
+- [Acesso Público Observado](#acesso-público-observado)
 - [Limpeza do Ambiente](#limpeza-do-ambiente)
 - [Observações Finais](#observações-finais)
 
@@ -211,12 +211,17 @@ Exemplo de geração:
 
 Em outras palavras: as imagens são renderizações visuais de saídas reais do terminal, não montagens feitas à mão em editor de imagem.
 
-## Link de Auditoria da EC2
-Link direto da instância criada no console AWS, na região usada no laboratório:
+## Acesso Público Observado
+Durante a execução bem-sucedida, a instância recebeu conectividade pública da AWS com os seguintes identificadores:
 
-- [Abrir EC2 `i-00036219dc46c0669` no console AWS](https://us-west-2.console.aws.amazon.com/ec2/home?region=us-west-2#InstanceDetails:instanceId=i-00036219dc46c0669)
+- IP público observado: `16.148.67.158`
+- DNS público observado: `ec2-16-148-67-158.us-west-2.compute.amazonaws.com`
 
-Observação: como a infraestrutura foi destruída ao final, a instância aparece como encerrada/terminada na consulta posterior.
+Esses dados foram coletados imediatamente após o `terraform apply`, conforme a evidência em `describe-instances` e `terraform state show`.
+
+Observação importante: a infraestrutura foi destruída ao final da atividade com `terraform destroy -auto-approve`. Portanto, esse IP/DNS servem como evidência histórica da execução, mas não respondem mais a ping ou acesso de rede.
+
+Observação técnica: o tutorial base não configura aplicação web, `user_data` nem regras extras de entrada para teste externo. Então, mesmo antes do `destroy`, o objetivo era comprovar o provisionamento da EC2, não publicar um serviço HTTP para auditoria pública.
 
 ## Limpeza do Ambiente
 Após coletar as evidências, destruí a infraestrutura para evitar custo residual.
