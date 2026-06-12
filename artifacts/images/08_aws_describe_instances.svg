@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="510" height="520" viewBox="0 0 510 520" role="img" aria-label="Saida de terminal">
+  <rect width="100%" height="100%" rx="18" fill="#0f172a"/>
+  <rect x="12" y="12" width="486" height="496" rx="14" fill="#111827" stroke="#334155"/>
+  <circle cx="36" cy="34" r="6" fill="#f87171"/>
+  <circle cx="56" cy="34" r="6" fill="#fbbf24"/>
+  <circle cx="76" cy="34" r="6" fill="#34d399"/>
+  <text x="104" y="39" fill="#94a3b8" font-family="monospace" font-size="16">terminal</text>
+  <g fill="#e5e7eb" font-family="monospace" font-size="16">
+  <text x="24" y="54">[</text>
+  <text x="24" y="76">    {</text>
+  <text x="24" y="98">        "InstanceId": "i-00036219dc46c0669",</text>
+  <text x="24" y="120">        "State": "running",</text>
+  <text x="24" y="142">        "Type": "t3.micro",</text>
+  <text x="24" y="164">        "AZ": "us-west-2a",</text>
+  <text x="24" y="186">        "PrivateIP": "172.31.46.41",</text>
+  <text x="24" y="208">        "PublicIP": "16.148.67.158",</text>
+  <text x="24" y="230">        "AMI": "ami-096f5760b00bcd95c",</text>
+  <text x="24" y="252">        "Subnet": "subnet-0b03f5403aa95d557",</text>
+  <text x="24" y="274">        "Vpc": "vpc-0c4dbe28a84d1881f",</text>
+  <text x="24" y="296">        "LaunchTime": "2026-06-12T21:27:24+00:00",</text>
+  <text x="24" y="318">        "Tags": [</text>
+  <text x="24" y="340">            {</text>
+  <text x="24" y="362">                "Key": "Name",</text>
+  <text x="24" y="384">                "Value": "learn-terraform"</text>
+  <text x="24" y="406">            }</text>
+  <text x="24" y="428">        ]</text>
+  <text x="24" y="450">    }</text>
+  <text x="24" y="472">]</text>
+  </g>
+</svg>

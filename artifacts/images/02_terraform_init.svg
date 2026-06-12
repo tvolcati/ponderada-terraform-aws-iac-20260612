@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="771" height="564" viewBox="0 0 771 564" role="img" aria-label="Saida de terminal">
+  <rect width="100%" height="100%" rx="18" fill="#0f172a"/>
+  <rect x="12" y="12" width="747" height="540" rx="14" fill="#111827" stroke="#334155"/>
+  <circle cx="36" cy="34" r="6" fill="#f87171"/>
+  <circle cx="56" cy="34" r="6" fill="#fbbf24"/>
+  <circle cx="76" cy="34" r="6" fill="#34d399"/>
+  <text x="104" y="39" fill="#94a3b8" font-family="monospace" font-size="16">terminal</text>
+  <g fill="#e5e7eb" font-family="monospace" font-size="16">
+  <text x="24" y="54">Initializing provider plugins found in the configuration...</text>
+  <text x="24" y="76">- Finding hashicorp/aws versions matching "~&gt; 5.92"...</text>
+  <text x="24" y="98">- Installing hashicorp/aws v5.100.0...</text>
+  <text x="24" y="120">- Installed hashicorp/aws v5.100.0 (signed by HashiCorp)</text>
+  <text x="24" y="142"></text>
+  <text x="24" y="164">Initializing the backend...</text>
+  <text x="24" y="186"></text>
+  <text x="24" y="208"></text>
+  <text x="24" y="230">Terraform has created a lock file .terraform.lock.hcl to record the provider</text>
+  <text x="24" y="252">selections it made above. Include this file in your version control repository</text>
+  <text x="24" y="274">so that Terraform can guarantee to make the same selections by default when</text>
+  <text x="24" y="296">you run "terraform init" in the future.</text>
+  <text x="24" y="318"></text>
+  <text x="24" y="340">Terraform has been successfully initialized!</text>
+  <text x="24" y="362"></text>
+  <text x="24" y="384">You may now begin working with Terraform. Try running "terraform plan" to see</text>
+  <text x="24" y="406">any changes that are required for your infrastructure. All Terraform commands</text>
+  <text x="24" y="428">should now work.</text>
+  <text x="24" y="450"></text>
+  <text x="24" y="472">If you ever set or change modules or backend configuration for Terraform,</text>
+  <text x="24" y="494">rerun this command to reinitialize your working directory. If you forget, other</text>
+  <text x="24" y="516">commands will detect it and remind you to do so if necessary.</text>
+  </g>
+</svg>

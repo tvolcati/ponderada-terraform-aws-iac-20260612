@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3354" height="278" viewBox="0 0 3354 278" role="img" aria-label="Saida de terminal">
+  <rect width="100%" height="100%" rx="18" fill="#0f172a"/>
+  <rect x="12" y="12" width="3330" height="254" rx="14" fill="#111827" stroke="#334155"/>
+  <circle cx="36" cy="34" r="6" fill="#f87171"/>
+  <circle cx="56" cy="34" r="6" fill="#fbbf24"/>
+  <circle cx="76" cy="34" r="6" fill="#34d399"/>
+  <text x="104" y="39" fill="#94a3b8" font-family="monospace" font-size="16">terminal</text>
+  <g fill="#e5e7eb" font-family="monospace" font-size="16">
+  <text x="24" y="54">aws_instance.app_server: Creating...</text>
+  <text x="24" y="76">╷</text>
+  <text x="24" y="98">│ Error: creating EC2 Instance: operation error EC2: RunInstances, https response error StatusCode: 400, RequestID: 71f37cbe-1ab9-4630-ae83-80a0c09e52db, api error InvalidParameterCombination: The specified instance type is not eligible for Free Tier. For a list of Free Tier instance types, run 'describe-instance-types' with the filter 'free-tier-eligible=true'.</text>
+  <text x="24" y="120">│ </text>
+  <text x="24" y="142">│   with aws_instance.app_server,</text>
+  <text x="24" y="164">│   on main.tf line 16, in resource "aws_instance" "app_server":</text>
+  <text x="24" y="186">│   16: resource "aws_instance" "app_server" {</text>
+  <text x="24" y="208">│ </text>
+  <text x="24" y="230">╵</text>
+  </g>
+</svg>

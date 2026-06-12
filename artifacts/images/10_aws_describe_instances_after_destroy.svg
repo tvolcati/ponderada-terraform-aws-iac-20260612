@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="456" height="234" viewBox="0 0 456 234" role="img" aria-label="Saida de terminal">
+  <rect width="100%" height="100%" rx="18" fill="#0f172a"/>
+  <rect x="12" y="12" width="432" height="210" rx="14" fill="#111827" stroke="#334155"/>
+  <circle cx="36" cy="34" r="6" fill="#f87171"/>
+  <circle cx="56" cy="34" r="6" fill="#fbbf24"/>
+  <circle cx="76" cy="34" r="6" fill="#34d399"/>
+  <text x="104" y="39" fill="#94a3b8" font-family="monospace" font-size="16">terminal</text>
+  <g fill="#e5e7eb" font-family="monospace" font-size="16">
+  <text x="24" y="54">[</text>
+  <text x="24" y="76">    {</text>
+  <text x="24" y="98">        "InstanceId": "i-00036219dc46c0669",</text>
+  <text x="24" y="120">        "State": "terminated",</text>
+  <text x="24" y="142">        "Type": "t3.micro"</text>
+  <text x="24" y="164">    }</text>
+  <text x="24" y="186">]</text>
+  </g>
+</svg>

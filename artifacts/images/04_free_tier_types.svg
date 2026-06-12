@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="276" height="190" viewBox="0 0 276 190" role="img" aria-label="Saida de terminal">
+  <rect width="100%" height="100%" rx="18" fill="#0f172a"/>
+  <rect x="12" y="12" width="252" height="166" rx="14" fill="#111827" stroke="#334155"/>
+  <circle cx="36" cy="34" r="6" fill="#f87171"/>
+  <circle cx="56" cy="34" r="6" fill="#fbbf24"/>
+  <circle cx="76" cy="34" r="6" fill="#34d399"/>
+  <text x="104" y="39" fill="#94a3b8" font-family="monospace" font-size="16">terminal</text>
+  <g fill="#e5e7eb" font-family="monospace" font-size="16">
+  <text x="24" y="54">c7i-flex.large	t4g.small</text>
+  <text x="24" y="76">t3.micro</text>
+  <text x="24" y="98">t4g.micro</text>
+  <text x="24" y="120">t3.small</text>
+  <text x="24" y="142">m7i-flex.large</text>
+  </g>
+</svg>

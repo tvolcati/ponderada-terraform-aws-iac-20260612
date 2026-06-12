@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="2566" viewBox="0 0 1140 2566" role="img" aria-label="Saida de terminal">
+  <rect width="100%" height="100%" rx="18" fill="#0f172a"/>
+  <rect x="12" y="12" width="1116" height="2542" rx="14" fill="#111827" stroke="#334155"/>
+  <circle cx="36" cy="34" r="6" fill="#f87171"/>
+  <circle cx="56" cy="34" r="6" fill="#fbbf24"/>
+  <circle cx="76" cy="34" r="6" fill="#34d399"/>
+  <text x="104" y="39" fill="#94a3b8" font-family="monospace" font-size="16">terminal</text>
+  <g fill="#e5e7eb" font-family="monospace" font-size="16">
+  <text x="24" y="54">data.aws_ami.ubuntu: Reading...</text>
+  <text x="24" y="76">data.aws_ami.ubuntu: Read complete after 1s [id=ami-096f5760b00bcd95c]</text>
+  <text x="24" y="98">aws_instance.app_server: Refreshing state... [id=i-00036219dc46c0669]</text>
+  <text x="24" y="120"></text>
+  <text x="24" y="142">Terraform used the selected providers to generate the following execution</text>
+  <text x="24" y="164">plan. Resource actions are indicated with the following symbols:</text>
+  <text x="24" y="186">  - destroy</text>
+  <text x="24" y="208"></text>
+  <text x="24" y="230">Terraform will perform the following actions:</text>
+  <text x="24" y="252"></text>
+  <text x="24" y="274">  # aws_instance.app_server will be destroyed</text>
+  <text x="24" y="296">  - resource "aws_instance" "app_server" {</text>
+  <text x="24" y="318">      - ami                                  = "ami-096f5760b00bcd95c" -&gt; null</text>
+  <text x="24" y="340">      - arn                                  = "arn:aws:ec2:us-west-2:439459619194:instance/i-00036219dc46c0669" -&gt; null</text>
+  <text x="24" y="362">      - associate_public_ip_address          = true -&gt; null</text>
+  <text x="24" y="384">      - availability_zone                    = "us-west-2a" -&gt; null</text>
+  <text x="24" y="406">      - cpu_core_count                       = 1 -&gt; null</text>
+  <text x="24" y="428">      - cpu_threads_per_core                 = 2 -&gt; null</text>
+  <text x="24" y="450">      - disable_api_stop                     = false -&gt; null</text>
+  <text x="24" y="472">      - disable_api_termination              = false -&gt; null</text>
+  <text x="24" y="494">      - ebs_optimized                        = false -&gt; null</text>
+  <text x="24" y="516">      - get_password_data                    = false -&gt; null</text>
+  <text x="24" y="538">      - hibernation                          = false -&gt; null</text>
+  <text x="24" y="560">      - id                                   = "i-00036219dc46c0669" -&gt; null</text>
+  <text x="24" y="582">      - instance_initiated_shutdown_behavior = "stop" -&gt; null</text>
+  <text x="24" y="604">      - instance_state                       = "running" -&gt; null</text>
+  <text x="24" y="626">      - instance_type                        = "t3.micro" -&gt; null</text>
+  <text x="24" y="648">      - ipv6_address_count                   = 0 -&gt; null</text>
+  <text x="24" y="670">      - ipv6_addresses                       = [] -&gt; null</text>
+  <text x="24" y="692">      - monitoring                           = false -&gt; null</text>
+  <text x="24" y="714">      - placement_partition_number           = 0 -&gt; null</text>
+  <text x="24" y="736">      - primary_network_interface_id         = "eni-0c59071baae446b1c" -&gt; null</text>
+  <text x="24" y="758">      - private_dns                          = "ip-172-31-46-41.us-west-2.compute.internal" -&gt; null</text>
+  <text x="24" y="780">      - private_ip                           = "172.31.46.41" -&gt; null</text>
+  <text x="24" y="802">      - public_dns                           = "ec2-16-148-67-158.us-west-2.compute.amazonaws.com" -&gt; null</text>
+  <text x="24" y="824">      - public_ip                            = "16.148.67.158" -&gt; null</text>
+  <text x="24" y="846">      - secondary_private_ips                = [] -&gt; null</text>
+  <text x="24" y="868">      - security_groups                      = [</text>
+  <text x="24" y="890">          - "default",</text>
+  <text x="24" y="912">        ] -&gt; null</text>
+  <text x="24" y="934">      - source_dest_check                    = true -&gt; null</text>
+  <text x="24" y="956">      - subnet_id                            = "subnet-0b03f5403aa95d557" -&gt; null</text>
+  <text x="24" y="978">      - tags                                 = {</text>
+  <text x="24" y="1000">          - "Name" = "learn-terraform"</text>
+  <text x="24" y="1022">        } -&gt; null</text>
+  <text x="24" y="1044">      - tags_all                             = {</text>
+  <text x="24" y="1066">          - "Name" = "learn-terraform"</text>
+  <text x="24" y="1088">        } -&gt; null</text>
+  <text x="24" y="1110">      - tenancy                              = "default" -&gt; null</text>
+  <text x="24" y="1132">      - user_data_replace_on_change          = false -&gt; null</text>
+  <text x="24" y="1154">      - vpc_security_group_ids               = [</text>
+  <text x="24" y="1176">          - "sg-06685c3714c8f6a43",</text>
+  <text x="24" y="1198">        ] -&gt; null</text>
+  <text x="24" y="1220">        # (8 unchanged attributes hidden)</text>
+  <text x="24" y="1242"></text>
+  <text x="24" y="1264">      - capacity_reservation_specification {</text>
+  <text x="24" y="1286">          - capacity_reservation_preference = "open" -&gt; null</text>
+  <text x="24" y="1308">        }</text>
+  <text x="24" y="1330"></text>
+  <text x="24" y="1352">      - cpu_options {</text>
+  <text x="24" y="1374">          - core_count       = 1 -&gt; null</text>
+  <text x="24" y="1396">          - threads_per_core = 2 -&gt; null</text>
+  <text x="24" y="1418">            # (1 unchanged attribute hidden)</text>
+  <text x="24" y="1440">        }</text>
+  <text x="24" y="1462"></text>
+  <text x="24" y="1484">      - credit_specification {</text>
+  <text x="24" y="1506">          - cpu_credits = "unlimited" -&gt; null</text>
+  <text x="24" y="1528">        }</text>
+  <text x="24" y="1550"></text>
+  <text x="24" y="1572">      - enclave_options {</text>
+  <text x="24" y="1594">          - enabled = false -&gt; null</text>
+  <text x="24" y="1616">        }</text>
+  <text x="24" y="1638"></text>
+  <text x="24" y="1660">      - maintenance_options {</text>
+  <text x="24" y="1682">          - auto_recovery = "default" -&gt; null</text>
+  <text x="24" y="1704">        }</text>
+  <text x="24" y="1726"></text>
+  <text x="24" y="1748">      - metadata_options {</text>
+  <text x="24" y="1770">          - http_endpoint               = "enabled" -&gt; null</text>
+  <text x="24" y="1792">          - http_protocol_ipv6          = "disabled" -&gt; null</text>
+  <text x="24" y="1814">          - http_put_response_hop_limit = 2 -&gt; null</text>
+  <text x="24" y="1836">          - http_tokens                 = "required" -&gt; null</text>
+  <text x="24" y="1858">          - instance_metadata_tags      = "disabled" -&gt; null</text>
+  <text x="24" y="1880">        }</text>
+  <text x="24" y="1902"></text>
+  <text x="24" y="1924">      - private_dns_name_options {</text>
+  <text x="24" y="1946">          - enable_resource_name_dns_a_record    = false -&gt; null</text>
+  <text x="24" y="1968">          - enable_resource_name_dns_aaaa_record = false -&gt; null</text>
+  <text x="24" y="1990">          - hostname_type                        = "ip-name" -&gt; null</text>
+  <text x="24" y="2012">        }</text>
+  <text x="24" y="2034"></text>
+  <text x="24" y="2056">      - root_block_device {</text>
+  <text x="24" y="2078">          - delete_on_termination = true -&gt; null</text>
+  <text x="24" y="2100">          - device_name           = "/dev/sda1" -&gt; null</text>
+  <text x="24" y="2122">          - encrypted             = false -&gt; null</text>
+  <text x="24" y="2144">          - iops                  = 3000 -&gt; null</text>
+  <text x="24" y="2166">          - tags                  = {} -&gt; null</text>
+  <text x="24" y="2188">          - tags_all              = {} -&gt; null</text>
+  <text x="24" y="2210">          - throughput            = 125 -&gt; null</text>
+  <text x="24" y="2232">          - volume_id             = "vol-0595b4445f5583bff" -&gt; null</text>
+  <text x="24" y="2254">          - volume_size           = 8 -&gt; null</text>
+  <text x="24" y="2276">          - volume_type           = "gp3" -&gt; null</text>
+  <text x="24" y="2298">            # (1 unchanged attribute hidden)</text>
+  <text x="24" y="2320">        }</text>
+  <text x="24" y="2342">    }</text>
+  <text x="24" y="2364"></text>
+  <text x="24" y="2386">Plan: 0 to add, 0 to change, 1 to destroy.</text>
+  <text x="24" y="2408">aws_instance.app_server: Destroying... [id=i-00036219dc46c0669]</text>
+  <text x="24" y="2430">aws_instance.app_server: Still destroying... [id=i-00036219dc46c0669, 00m10s elapsed]</text>
+  <text x="24" y="2452">aws_instance.app_server: Still destroying... [id=i-00036219dc46c0669, 00m20s elapsed]</text>
+  <text x="24" y="2474">aws_instance.app_server: Destruction complete after 22s</text>
+  <text x="24" y="2496"></text>
+  <text x="24" y="2518">Destroy complete! Resources: 1 destroyed.</text>
+  </g>
+</svg>
