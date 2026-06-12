@@ -38,6 +38,7 @@ AWS Provider
 - `main.tf`: provider, `data source` da AMI Ubuntu e instância EC2.
 - `.terraform.lock.hcl`: trava a versão exata do provider instalada no `init`.
 - `artifacts/images/`: evidências visuais geradas a partir das saídas reais dos comandos.
+- `Captura de tela de 2025-08-19 15-42-40.png`: captura manual do console AWS com os dados da instância criada.
 - `scripts/render_terminal_svg.sh`: script que transforma saídas de terminal em imagens SVG.
 
 ## Passo a Passo Executado
@@ -170,6 +171,10 @@ aws ec2 describe-instances \
 
 ![Describe instances](artifacts/images/08_aws_describe_instances.svg)
 
+Evidência complementar obtida diretamente no console AWS:
+
+![Captura do console AWS](Captura%20de%20tela%20de%202025-08-19%2015-42-40.png)
+
 ## Recursos Provisionados
 Durante a execução bem-sucedida, o Terraform acompanhou o `data.aws_ami.ubuntu` e provisionou o recurso `aws_instance.app_server`.
 
@@ -194,6 +199,11 @@ Durante a execução bem-sucedida, o Terraform acompanhou o `data.aws_ami.ubuntu
 | Tag aplicada | `Name = learn-terraform` |
 
 ## Evidências e Prints
+Para evitar dúvida sobre a origem das imagens, o relatório usa dois tipos de evidência:
+
+1. Prints automatizados gerados a partir das saídas reais dos comandos executados.
+2. Captura manual do console AWS mostrando a instância criada no ambiente da nuvem.
+
 Para evitar dúvida sobre a origem das imagens, os prints não foram feitos manualmente.
 
 Fluxo usado:
@@ -209,7 +219,7 @@ Exemplo de geração:
   artifacts/images/06_terraform_apply_success.svg
 ```
 
-Em outras palavras: as imagens são renderizações visuais de saídas reais do terminal, não montagens feitas à mão em editor de imagem.
+Em outras palavras: as imagens SVG do relatório são renderizações visuais de saídas reais do terminal, enquanto o arquivo PNG adicionado ao repositório é uma captura manual do console AWS para comprovação visual complementar.
 
 ## Acesso Público Observado
 Durante a execução bem-sucedida, a instância recebeu conectividade pública da AWS com os seguintes identificadores:
